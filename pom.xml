@@ -6,11 +6,24 @@
 	<groupId>io.github.upfun</groupId>
 	<artifactId>joodle</artifactId>
 	<version>0.0.1</version>
+	<modules>
+		<module>joodle-protocals</module>
+	</modules>
 	<packaging>pom</packaging>
 
 	<name>joodle</name>
 	<description>joodle</description>
 
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>junit</groupId>
+				<artifactId>junit</artifactId>
+				<version>3.8.1</version>
+				<scope>test</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
 	
 
 
